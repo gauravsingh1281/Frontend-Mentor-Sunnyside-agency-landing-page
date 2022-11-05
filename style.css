@@ -191,7 +191,7 @@ footer a {
   color: var(--Very-dark-desaturated-blue);
   text-align: center;
 }
-.Client-testimonials h1 {
+.Client-testimonials .testimonial-heading {
   text-align: center;
   font-size: 40px;
   text-transform: uppercase;
@@ -448,7 +448,7 @@ footer a:hover {
     line-height: 23px;
     font-size: 15.2px;
   }
-  .Client-testimonials h1 {
+  .Client-testimonials .testimonial-heading {
     text-align: center;
     letter-spacing: 3px;
     font-size: 30px;
@@ -552,6 +552,6 @@ footer a:hover {
 
 @media (min-width: 650px) {
   body {
-    width: 92rem;
+    width: 87.75rem;
   }
 }
