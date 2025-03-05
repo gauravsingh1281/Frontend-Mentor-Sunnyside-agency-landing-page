@@ -9,53 +9,105 @@
 </head>
 
 <body>
-  About
-  Services
-  Projects
-  Contact
+  <main class="w-full h-full">
+    <header
+      class="w-full h-[500px] bg-[url('../images/mobile/image-header.jpg')] lg:bg-[url('../images/desktop/image-header.jpg')] bg-cover bg-center relative">
 
-  We are creatives
+      <nav class="flex justify-between items-center p-4 lg:py-8 lg:px-6">
+        <img src="./images/logo.svg" alt="logo">
+        <!-- Mobile Nav links -->
+        <div id="mobile-nav-links" class="lg:hidden hidden">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+          <a href="#">Contact</a>
+        </div>
+        <!-- Desktop Nav link -->
+        <div id="desktop-nav-links" class="hidden lg:flex justify-between items-center gap-8">
+          <a href="#"
+            class="text-White font-barlow font-[600] px-4 py-2 rounded-full hover:text-black hover:bg-White active:bg-Grayish-blue active:text-white">About</a>
+          <a href="#"
+            class="text-White font-barlow font-[600] px-4 py-2 rounded-full hover:text-black hover:bg-White active:bg-Grayish-blue active:text-white">Services</a>
+          <a href="#"
+            class="text-White font-barlow font-[600] px-4 py-2 rounded-full hover:text-black hover:bg-White active:bg-Grayish-blue active:text-white">Projects</a>
+          <a href="#"
+            class="text-White font-barlow font-[600] px-4 py-2 rounded-full hover:text-black hover:bg-White active:bg-Grayish-blue active:text-white">Contact</a>
+        </div>
+        <img id="mobile-nav-btn" class="lg:hidden" src="./images/icon-hamburger.svg" alt="icon-hamburger">
+      </nav>
 
-  Transform your brand
+      <div class="flex flex-col items-center justify-center gap-20 mt-16">
+        <h1 class="text-4xl w-[70%] lg:w-full text-center uppercase font-fraunces text-White font-extrabold">
+          We are creatives
+        </h1>
+        <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down">
+      </div>
 
-  We are a full-service creative agency specializing in helping brands grow fast.
-  Engage your clients through compelling visuals that do most of the marketing for you.
+    </header>
+    <!-- Services section -->
+    <section class="w-full flex justify-center items-center flex-col lg:flex-row-reverse">
+      <div class="lg:w-1/2 w-full"><img class="w-full" src="./images/mobile/image-transform.jpg" alt="image-transform">
+      </div>
+      <div class="  lg:w-1/2 w-full flex justify-center items-center lg:items-start flex-col gap-5 py-8 px-6">
+        <h2 class="text-3xl text-black font-fraunces font-[900] text-center lg:text-left">Transform your brand</h2>
+        <p class="text-base text-Dark-grayish-blue text-center lg:text-left font-bold font-barlow">We are a full-service
+          creative
+          agency
+          specializing in
+          helping
+          brands grow fast.
+          Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <div class="relative group">
+          <a href="#" class=" relative uppercase font-fraunces font-extrabold z-20">Learn
+            more</a>
+          <span
+            class="absolute -bottom-[0.5px] left-0 w-full h-[10px] bg-Yellow opacity-20 group-hover:opacity-100 rounded-md z-10"></span>
+        </div>
+      </div>
+    </section>
 
-  Learn more
 
-  Stand out to the right audience
 
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build
-  and extend your brand in digital places.
 
-  Learn more
 
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential
-  clients’ attention.
 
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
 
-  Client testimonials
 
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
 
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable
-  experience.
-  Thomas S.
-  Chief Operating Officer
+    Stand out to the right audience
 
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
+    Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build
+    and extend your brand in digital places.
 
-  About
-  Services
-  Projects
-  Contact
+    Learn more
+
+    Graphic design
+    Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential
+    clients’ attention.
+
+    Photography
+    Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+
+    Client testimonials
+
+    We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+    Emily R.
+    Marketing Director
+
+    Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable
+    experience.
+    Thomas S.
+    Chief Operating Officer
+
+    Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+    Jennie F.
+    Business Owner
+
+    About
+    Services
+    Projects
+    Contact
+  </main>
 </body>
 
 </html>

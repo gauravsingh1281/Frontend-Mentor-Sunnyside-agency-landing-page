@@ -3,7 +3,7 @@
 
 @theme {
     /* Primary color */
-    --color-Soft red: hsl(7, 99%, 70%);
+    --color-Soft-red: hsl(7, 99%, 70%);
     --color-Yellow: hsl(51, 100%, 49%);
     --color-Dark-desaturated-cyan: hsl(167, 40%, 24%);
     --color-Dark-blue: hsl(198, 62%, 26%);
