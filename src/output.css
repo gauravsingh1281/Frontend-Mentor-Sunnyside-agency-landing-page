@@ -399,6 +399,9 @@
   .bg-center {
     background-position: center;
   }
+  .object-fill {
+    object-fit: fill;
+  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
@@ -538,9 +541,109 @@
       color: var(--color-white);
     }
   }
+  .sm\:w-1\/2 {
+    @media (width >= 40rem) {
+      width: calc(1/2 * 100%);
+    }
+  }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
+    }
+  }
+  .md\:flex {
+    @media (width >= 48rem) {
+      display: flex;
+    }
+  }
+  .md\:hidden {
+    @media (width >= 48rem) {
+      display: none;
+    }
+  }
+  .md\:h-\[600px\] {
+    @media (width >= 48rem) {
+      height: 600px;
+    }
+  }
+  .md\:h-full {
+    @media (width >= 48rem) {
+      height: 100%;
+    }
+  }
+  .md\:w-1\/2 {
+    @media (width >= 48rem) {
+      width: calc(1/2 * 100%);
+    }
+  }
   .md\:w-\[60\%\] {
     @media (width >= 48rem) {
       width: 60%;
+    }
+  }
+  .md\:w-full {
+    @media (width >= 48rem) {
+      width: 100%;
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
+  .md\:flex-row-reverse {
+    @media (width >= 48rem) {
+      flex-direction: row-reverse;
+    }
+  }
+  .md\:items-start {
+    @media (width >= 48rem) {
+      align-items: flex-start;
+    }
+  }
+  .md\:gap-6 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 6);
+    }
+  }
+  .md\:bg-\[url\(\'\.\.\/images\/desktop\/image-graphic-design\.jpg\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('../images/desktop/image-graphic-design.jpg');
+    }
+  }
+  .md\:bg-\[url\(\'\.\.\/images\/desktop\/image-header\.jpg\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('../images/desktop/image-header.jpg');
+    }
+  }
+  .md\:bg-\[url\(\'\.\.\/images\/desktop\/image-photography\.jpg\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('../images/desktop/image-photography.jpg');
+    }
+  }
+  .md\:px-3 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 3);
+    }
+  }
+  .md\:px-6 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 6);
+    }
+  }
+  .md\:py-6 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 6);
+    }
+  }
+  .md\:py-8 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 8);
+    }
+  }
+  .md\:text-left {
+    @media (width >= 48rem) {
+      text-align: left;
     }
   }
   .lg\:mb-6 {
@@ -613,6 +716,11 @@
       align-items: flex-start;
     }
   }
+  .lg\:gap-8 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 8);
+    }
+  }
   .lg\:bg-\[url\(\'\.\.\/images\/desktop\/graphic-design\.jpg\'\)\] {
     @media (width >= 64rem) {
       background-image: url('../images/desktop/graphic-design.jpg');
@@ -631,6 +739,11 @@
   .lg\:bg-\[url\(\'\.\.\/images\/desktop\/image-photography\.jpg\'\)\] {
     @media (width >= 64rem) {
       background-image: url('../images/desktop/image-photography.jpg');
+    }
+  }
+  .lg\:px-4 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 4);
     }
   }
   .lg\:px-6 {
