@@ -7,17 +7,27 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-200: oklch(0.885 0.062 18.334);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
+    --font-weight-light: 300;
+    --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
+    --font-weight-black: 900;
     --radius-md: 0.375rem;
     --default-font-family: var(--font-sans);
     --default-font-feature-settings: var(--font-sans--font-feature-settings);
@@ -33,6 +43,8 @@
     );
     --color-Soft-red: hsl(7, 99%, 70%);
     --color-Yellow: hsl(51, 100%, 49%);
+    --color-Dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --color-Dark-moderate-cyan: hsl(168, 34%, 41%);
     --color-Dark-grayish-blue: hsl(232, 10%, 55%);
     --color-Grayish-blue: hsl(210, 4%, 67%);
     --color-White: hsl(0, 0%, 100%);
@@ -194,6 +206,9 @@
   .-bottom-\[0\.5px\] {
     bottom: calc(0.5px * -1);
   }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
@@ -205,6 +220,18 @@
   }
   .mt-16 {
     margin-top: calc(var(--spacing) * 16);
+  }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-7 {
+    margin-bottom: calc(var(--spacing) * 7);
+  }
+  .mb-12 {
+    margin-bottom: calc(var(--spacing) * 12);
   }
   .block {
     display: block;
@@ -224,20 +251,65 @@
   .table {
     display: table;
   }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
+  }
+  .h-1\/2 {
+    height: calc(1/2 * 100%);
+  }
   .h-\[10px\] {
     height: 10px;
+  }
+  .h-\[400\] {
+    height: 400;
+  }
+  .h-\[400px\] {
+    height: 400px;
   }
   .h-\[500px\] {
     height: 500px;
   }
+  .h-\[600px\] {
+    height: 600px;
+  }
   .h-full {
     height: 100%;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
+  .w-1\/2 {
+    width: calc(1/2 * 100%);
+  }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
+  .w-2\/3 {
+    width: calc(2/3 * 100%);
+  }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
+  .w-3\/4 {
+    width: calc(3/4 * 100%);
+  }
+  .w-\[60\%\] {
+    width: 60%;
   }
   .w-\[70\%\] {
     width: 70%;
   }
+  .w-\[500px\] {
+    width: 500px;
+  }
+  .w-fit {
+    width: fit-content;
+  }
   .w-full {
     width: 100%;
+  }
+  .w-screen {
+    width: 100vw;
   }
   .flex-grow {
     flex-grow: 1;
@@ -257,17 +329,29 @@
   .items-center {
     align-items: center;
   }
+  .items-end {
+    align-items: flex-end;
+  }
   .justify-between {
     justify-content: space-between;
   }
   .justify-center {
     justify-content: center;
   }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
   }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
@@ -288,8 +372,26 @@
   .bg-Yellow {
     background-color: var(--color-Yellow);
   }
+  .bg-red-200 {
+    background-color: var(--color-red-200);
+  }
+  .bg-transparent {
+    background-color: transparent;
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+  .bg-\[url\(\'\.\.\/images\/mobile\/graphic-design\.jpg\'\)\] {
+    background-image: url('../images/mobile/graphic-design.jpg');
+  }
+  .bg-\[url\(\'\.\.\/images\/mobile\/image-graphic-design\.jpg\'\)\] {
+    background-image: url('../images/mobile/image-graphic-design.jpg');
+  }
   .bg-\[url\(\'\.\.\/images\/mobile\/image-header\.jpg\'\)\] {
     background-image: url('../images/mobile/image-header.jpg');
+  }
+  .bg-\[url\(\'\.\.\/images\/mobile\/image-photography\.jpg\'\)\] {
+    background-image: url('../images/mobile/image-photography.jpg');
   }
   .bg-cover {
     background-size: cover;
@@ -321,6 +423,10 @@
   .font-fraunces {
     font-family: var(--font-fraunces);
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
@@ -333,6 +439,18 @@
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
   }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .font-\[500\] {
+    --tw-font-weight: 500;
+    font-weight: 500;
+  }
   .font-\[600\] {
     --tw-font-weight: 600;
     font-weight: 600;
@@ -340,6 +458,10 @@
   .font-\[900\] {
     --tw-font-weight: 900;
     font-weight: 900;
+  }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -349,8 +471,22 @@
     --tw-font-weight: var(--font-weight-extrabold);
     font-weight: var(--font-weight-extrabold);
   }
+  .font-light {
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .text-Dark-desaturated-cyan {
+    color: var(--color-Dark-desaturated-cyan);
+  }
   .text-Dark-grayish-blue {
     color: var(--color-Dark-grayish-blue);
+  }
+  .text-Dark-moderate-cyan {
+    color: var(--color-Dark-moderate-cyan);
   }
   .text-White {
     color: var(--color-White);
@@ -402,6 +538,16 @@
       color: var(--color-white);
     }
   }
+  .md\:w-\[60\%\] {
+    @media (width >= 48rem) {
+      width: 60%;
+    }
+  }
+  .lg\:mb-6 {
+    @media (width >= 64rem) {
+      margin-bottom: calc(var(--spacing) * 6);
+    }
+  }
   .lg\:block {
     @media (width >= 64rem) {
       display: block;
@@ -415,6 +561,31 @@
   .lg\:hidden {
     @media (width >= 64rem) {
       display: none;
+    }
+  }
+  .lg\:h-\[400px\] {
+    @media (width >= 64rem) {
+      height: 400px;
+    }
+  }
+  .lg\:h-\[450px\] {
+    @media (width >= 64rem) {
+      height: 450px;
+    }
+  }
+  .lg\:h-\[500px\] {
+    @media (width >= 64rem) {
+      height: 500px;
+    }
+  }
+  .lg\:h-\[600px\] {
+    @media (width >= 64rem) {
+      height: 600px;
+    }
+  }
+  .lg\:h-full {
+    @media (width >= 64rem) {
+      height: 100%;
     }
   }
   .lg\:w-1\/2 {
@@ -442,9 +613,24 @@
       align-items: flex-start;
     }
   }
+  .lg\:bg-\[url\(\'\.\.\/images\/desktop\/graphic-design\.jpg\'\)\] {
+    @media (width >= 64rem) {
+      background-image: url('../images/desktop/graphic-design.jpg');
+    }
+  }
+  .lg\:bg-\[url\(\'\.\.\/images\/desktop\/image-graphic-design\.jpg\'\)\] {
+    @media (width >= 64rem) {
+      background-image: url('../images/desktop/image-graphic-design.jpg');
+    }
+  }
   .lg\:bg-\[url\(\'\.\.\/images\/desktop\/image-header\.jpg\'\)\] {
     @media (width >= 64rem) {
       background-image: url('../images/desktop/image-header.jpg');
+    }
+  }
+  .lg\:bg-\[url\(\'\.\.\/images\/desktop\/image-photography\.jpg\'\)\] {
+    @media (width >= 64rem) {
+      background-image: url('../images/desktop/image-photography.jpg');
     }
   }
   .lg\:px-6 {
