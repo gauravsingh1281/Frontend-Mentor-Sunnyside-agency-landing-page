@@ -197,9 +197,6 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
-  .z-0 {
-    z-index: 0;
-  }
   .z-10 {
     z-index: 10;
   }
@@ -272,9 +269,6 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
-  .gap-10 {
-    gap: calc(var(--spacing) * 10);
-  }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
   }
@@ -309,20 +303,11 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
-  .px-5 {
-    padding-inline: calc(var(--spacing) * 5);
-  }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
-  }
-  .py-3 {
-    padding-block: calc(var(--spacing) * 3);
-  }
-  .py-4 {
-    padding-block: calc(var(--spacing) * 4);
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
@@ -379,9 +364,6 @@
   .underline {
     text-decoration-line: underline;
   }
-  .opacity-10 {
-    opacity: 10%;
-  }
   .opacity-20 {
     opacity: 20%;
   }
@@ -410,40 +392,9 @@
       }
     }
   }
-  .hover\:opacity-0 {
-    &:hover {
-      @media (hover: hover) {
-        opacity: 0%;
-      }
-    }
-  }
-  .hover\:opacity-1 {
-    &:hover {
-      @media (hover: hover) {
-        opacity: 1%;
-      }
-    }
-  }
-  .hover\:opacity-100 {
-    &:hover {
-      @media (hover: hover) {
-        opacity: 100%;
-      }
-    }
-  }
   .active\:bg-Grayish-blue {
     &:active {
       background-color: var(--color-Grayish-blue);
-    }
-  }
-  .active\:bg-White {
-    &:active {
-      background-color: var(--color-White);
-    }
-  }
-  .active\:text-White {
-    &:active {
-      color: var(--color-White);
     }
   }
   .active\:text-white {
@@ -451,14 +402,9 @@
       color: var(--color-white);
     }
   }
-  .active\:opacity-5 {
-    &:active {
-      opacity: 5%;
-    }
-  }
-  .active\:opacity-10 {
-    &:active {
-      opacity: 10%;
+  .lg\:block {
+    @media (width >= 64rem) {
+      display: block;
     }
   }
   .lg\:flex {
@@ -479,6 +425,11 @@
   .lg\:w-full {
     @media (width >= 64rem) {
       width: 100%;
+    }
+  }
+  .lg\:flex-row {
+    @media (width >= 64rem) {
+      flex-direction: row;
     }
   }
   .lg\:flex-row-reverse {
