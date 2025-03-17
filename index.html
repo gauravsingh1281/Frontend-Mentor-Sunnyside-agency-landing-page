@@ -54,7 +54,8 @@
           <!-- desktop image -->
           <img class="w-full hidden md:block" src="./images/desktop/image-transform.jpg" alt="image-transform">
         </div>
-        <div class="  md:w-1/2 w-full flex justify-center items-center md:items-start flex-col gap-5 py-8 px-6">
+        <div
+          class="  md:w-1/2 w-full flex justify-center items-center md:items-start flex-col gap-5 py-8 px-6  md:px-20">
           <h2 class="text-3xl text-black font-fraunces font-[900] text-center md:text-left">Transform your brand</h2>
           <p class="text-base text-Dark-grayish-blue text-center md:text-left font-bold font-barlow">We are a
             full-service
@@ -80,7 +81,8 @@
           <!-- desktop image -->
           <img class="w-full hidden md:block" src="./images/desktop/image-stand-out.jpg" alt="image-transform">
         </div>
-        <div class="  md:w-1/2 w-full flex justify-center items-center md:items-start flex-col gap-5 py-8 px-6">
+        <div
+          class="  md:w-1/2 w-full flex justify-center items-center md:items-start flex-col gap-5 py-8 px-6 md:px-20">
           <h2 class="text-3xl text-black font-fraunces font-[900] text-center md:text-left">Stand out to the right
             audience</h2>
           <p class="text-base text-Dark-grayish-blue text-center md:text-left font-bold font-barlow">We are a
@@ -126,7 +128,7 @@
     </section>
     <!-- Testimonials section -->
     <section class="w-full bg-White p-12 md:py-14 md:px-16">
-      <h2 class="uppercase text-2xl font-fraunces font-bold text-Dark-grayish-blue text-center mb-8 md:mb-10">Client
+      <h2 class="uppercase text-2xl font-fraunces font-bold text-Grayish-blue text-center mb-8 md:mb-10">Client
         testimonials
       </h2>
       <div class="flex justify-center items-center flex-col md:flex-row gap-10">
@@ -141,8 +143,8 @@
             hit.</p>
           <!-- User name & designation -->
           <div class="flex justify-center items-center gap-2 flex-col">
-            <h3 class="text-lg font-fraunces font-bold text-Dark-blue">Emily R.</h3>
-            <p class="text-base font-barlow text-Dark-grayish-blue font-bold">Marketing Director</p>
+            <h3 class="text-lg font-fraunces font-bold text-Very-dark-desaturated-blue">Emily R.</h3>
+            <p class="text-base font-barlow text-Grayish-blue font-bold">Marketing Director</p>
           </div>
         </div>
         <div class="flex justify-center items-center flex-col gap-8">
@@ -156,8 +158,8 @@
             experience.</p>
           <!-- User name & designation -->
           <div class="flex justify-center items-center gap-2 flex-col">
-            <h3 class="text-lg font-fraunces font-bold text-Dark-blue">Thomas S.</h3>
-            <p class="text-base font-barlow text-Dark-grayish-blue font-bold">Chief Operating Officer</p>
+            <h3 class="text-lg font-fraunces font-bold text-Very-dark-desaturated-blue">Thomas S.</h3>
+            <p class="text-base font-barlow text-Grayish-blue font-bold">Chief Operating Officer</p>
           </div>
         </div>
         <div class="flex justify-center items-center flex-col gap-8">
@@ -170,48 +172,54 @@
             sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
           <!-- User name & designation -->
           <div class="flex justify-center items-center gap-2 flex-col">
-            <h3 class="text-lg font-fraunces font-bold text-Dark-blue">Jennie F.</h3>
-            <p class="text-base font-barlow text-Dark-grayish-blue font-bold">Business Owner</p>
+            <h3 class="text-lg font-fraunces font-bold text-Very-dark-desaturated-blue">Jennie F.</h3>
+            <p class="text-base font-barlow text-Grayish-blue font-bold">Business Owner</p>
           </div>
         </div>
       </div>
     </section>
     <!-- image gallery -->
-    <section class="w-full flex flex-col md:flex-row">
-      <div class="flex items-center  justify-center w-full">
-        <!-- Mobile image -->
-        <img class="w-1/2 md:hidden" src="./images/mobile/image-gallery-milkbottles.jpg"
-          alt="image-gallery-milkbottles">
-        <img class="w-1/2 md:hidden" src="./images/mobile/image-gallery-orange.jpg" alt="image-gallery-orange">
-        <!-- Desktop image -->
-        <img class="w-1/2 hidden md:block" src="./images/desktop/image-gallery-milkbottles.jpg"
-          alt="image-gallery-milkbottles">
-        <img class="w-1/2 hidden md:block" src="./images/desktop/image-gallery-orange.jpg" alt="image-gallery-orange">
-      </div>
-
-      <div class="flex items-center justify-center w-full">
-        <!-- Mobile image -->
-        <img class="w-1/2 md:hidden" src="./images/mobile/image-gallery-cone.jpg" alt="image-gallery-cone">
-        <img class="w-1/2 md:hidden" src="./images/mobile/image-gallery-sugar-cubes.jpg"
-          alt="image-gallery-sugar-cubes">
-        <!-- Desktop image -->
-        <img class="w-1/2 hidden md:block" src="./images/desktop/image-gallery-cone.jpg" alt="image-gallery-cone">
-        <img class="w-1/2 hidden md:block" src="./images/desktop/image-gallery-sugarcubes.jpg"
-          alt="image-gallery-sugar-cubes">
-      </div>
+    <section class="w-full grid grid-cols-2 grid-rows-2 md:grid-cols-4 md:grid-rows-1">
+      <!-- Mobile image -->
+      <img class="md:hidden" src="./images/mobile/image-gallery-milkbottles.jpg" alt="image-gallery-milkbottles">
+      <img class="md:hidden" src="./images/mobile/image-gallery-orange.jpg" alt="image-gallery-orange">
+      <img class="md:hidden" src="./images/mobile/image-gallery-cone.jpg" alt="image-gallery-cone">
+      <img class="md:hidden" src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="image-gallery-sugar-cubes">
+      <!-- Desktop image -->
+      <img class="hidden md:block" src="./images/desktop/image-gallery-milkbottles.jpg" alt="image-gallery-milkbottles">
+      <img class="hidden md:block" src="./images/desktop/image-gallery-orange.jpg" alt="image-gallery-orange">
+      <img class="hidden md:block" src="./images/desktop/image-gallery-cone.jpg" alt="image-gallery-cone">
+      <img class="hidden md:block" src="./images/desktop/image-gallery-sugarcubes.jpg" alt="image-gallery-sugar-cubes">
 
     </section>
 
+    <footer class="w-full bg-Dark-moderate-cyan flex justify-center items-center flex-col gap-8 py-16 ">
+      <!-- Footer logo -->
+      <img class="w-36" src="./images/footer-logo.svg" alt="footer-logo">
+      <!-- Footer links -->
+      <div class="flex justify-between items-center gap-4 md:gap-7">
+        <a href="#"
+          class="text-lg md:text-xl font-barlow text-Dark-desaturated-cyan font-semibold hover:text-White">About</a>
+        <a href="#"
+          class="text-lg md:text-xl font-barlow text-Dark-desaturated-cyan font-semibold hover:text-White">Services</a>
+        <a href="#"
+          class="text-lg md:text-xl font-barlow text-Dark-desaturated-cyan font-semibold hover:text-White">Projcts</a>
+        <a href="#"
+          class="text-lg md:text-xl font-barlow text-Dark-desaturated-cyan font-semibold hover:text-White">Contact</a>
+      </div>
+      <!-- Social icons -->
+      <div class="flex justify-center items-center gap-6">
+        <img class="hover:brightness-0 hover:invert-100 hover:cursor-pointer" src="./images/icon-facebook.svg"
+          alt="icon-facebook">
+        <img class="hover:brightness-0 hover:invert-100 hover:cursor-pointer" src="./images/icon-instagram.svg"
+          alt="icon-instagram">
+        <img class="hover:brightness-0 hover:invert-100 hover:cursor-pointer" src="./images/icon-twitter.svg"
+          alt="icon-twitter">
+        <img class="hover:brightness-0 hover:invert-100 hover:cursor-pointer" src="./images/icon-pinterest.svg"
+          alt="icon-pinterest">
+      </div>
+    </footer>
 
-
-
-
-
-
-    About
-    Services
-    Projcts
-    Contact
   </main>
 </body>
 

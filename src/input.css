@@ -7,7 +7,7 @@
     --color-Yellow: hsl(51, 100%, 49%);
     --color-Dark-desaturated-cyan: hsl(167, 40%, 24%);
     --color-Dark-blue: hsl(198, 62%, 26%);
-    --color-Dark-moderate-cyan: hsl(168, 34%, 41%);
+    --color-Dark-moderate-cyan: #38E0BF;
 
     /* Neutral color */
     --color-Very-dark-desaturated-blue: hsl(212, 27%, 19%);
