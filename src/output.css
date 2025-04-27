@@ -272,6 +272,9 @@
   .h-\[600px\] {
     height: 600px;
   }
+  .h-fit {
+    height: fit-content;
+  }
   .h-full {
     height: 100%;
   }
@@ -845,6 +848,26 @@
   .md\:px-20 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 20);
+    }
+  }
+  .md\:px-\[54px\] {
+    @media (width >= 48rem) {
+      padding-inline: 54px;
+    }
+  }
+  .md\:px-\[56px\] {
+    @media (width >= 48rem) {
+      padding-inline: 56px;
+    }
+  }
+  .md\:px-\[60px\] {
+    @media (width >= 48rem) {
+      padding-inline: 60px;
+    }
+  }
+  .md\:px-\[76px\] {
+    @media (width >= 48rem) {
+      padding-inline: 76px;
     }
   }
   .md\:py-6 {
