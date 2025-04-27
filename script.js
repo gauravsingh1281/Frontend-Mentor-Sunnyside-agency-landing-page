@@ -8,6 +8,12 @@ const headerArrow = document.getElementById("header-arrow");
 
 showMobileNavBtn.addEventListener("click", (e) => {
   mobileNav.classList.toggle("hidden");
+  tl1.from(mobileNavLink, {
+    opacity: 0,
+    duration: 0.4,
+    y: -30,
+    stagger: 0.5,
+  });
 });
 
 const tl1 = gsap.timeline();
@@ -31,12 +37,7 @@ tl1.from(desktopNavLink, {
   y: -30,
   stagger: 0.5,
 });
-tl1.from(mobileNavLink, {
-  opacity: 0,
-  duration: 0.4,
-  y: -30,
-  stagger: 0.5,
-});
+
 tl2.from(mainHeading, {
   opacity: 0,
   scale: 0.7,
