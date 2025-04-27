@@ -21,7 +21,7 @@ const tl2 = gsap.timeline();
 tl1.from(logo, {
   opacity: 0,
   duration: 0.7,
-  delay: 0.6,
+  delay: 1,
   y: -30,
 });
 
@@ -47,6 +47,5 @@ tl2.from(mainHeading, {
 tl2.from(headerArrow, {
   opacity: 0,
   scale: 0.7,
-
   duration: 0.68,
 });
